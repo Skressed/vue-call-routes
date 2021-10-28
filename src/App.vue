@@ -41,9 +41,6 @@ export default {
       let routes = mockedData.data.company;
 
       for (let key in routes) {
-        //console.log(key); // airTel earthTel etc ...
-        //console.log(routes[key]) // Array(6) with routes
-
         for (let i=0; i<routes[key].length; i++) {
           let route = routes[key][i];
           route.provider = key;
@@ -106,7 +103,6 @@ export default {
         totalPrice: totalPrice,
         UUID: this.$uuid.v1()
       });
-      //console.log(nodeCount + '-node route chain added');
     }
   }
 }
